@@ -23,7 +23,7 @@ console.log("Hello world!! How are you?".includes("llo w"))
 
 // repeat
 console.log("Hello JS!!".repeat(3))
-/*
+
 // length
 let name1 = '"Paras"'
 console.log(name1.length)
@@ -50,4 +50,4 @@ let name2 = "    Harsh"
 console.log(name2.trim())  // Remove Whitespaces
 let name3 = "Harsh      "
 console.log(name3.trim())
-*/
+
