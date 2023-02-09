@@ -1,5 +1,4 @@
 // String methods in JavaScript
-
 // Properties and methods
 
 // charAt 
@@ -50,4 +49,3 @@ let name2 = "    Harsh"
 console.log(name2.trim())  // Remove Whitespaces
 let name3 = "Harsh      "
 console.log(name3.trim())
-
