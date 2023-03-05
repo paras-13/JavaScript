@@ -24,3 +24,4 @@ while (key=='y')
     }
 }
 console.log(`Your score is ${100-guess}`)
+console.log("Thank you for playing this game")
