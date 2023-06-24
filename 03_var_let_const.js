@@ -16,9 +16,9 @@ console.log(b)
 
 // var is just used to create a variable, it does not change value in case of local or global variable
 
-// So here a is declared inder var so its value get changed even after defining inside a block
+// So here a is declared under var so its value get changed even after defining inside a block
 // Thus var does not support local and global level of declaring a variable.
-// We cant define constant identifier later, it is to be defined at the mon=ment
+// We cant define constant identifier later, it is to be defined at the moment
 const author = "Paras"
 // const is used to reserve an identifier so that user can't make any changes into it later.
 // User can not declare this identifier inside let or var later.
