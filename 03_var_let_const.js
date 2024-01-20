@@ -10,20 +10,27 @@ let c;
 }
 console.log(a)
 console.log(b)
-//We cannot re-declare let
-// let help us to create global and local variable
-// Once a variable is declared under let than no need to declare it again.
+// Block Scope was introduced in JS in 2015, replacing the previous Global and Function block scopes.
+// Variables declared with 'let' cannot be re-declared in the same scope, promoting better scoping practices.
+// 'let' allows us to create both global and local variables, enabling more granular control over variable visibility.
+// Once a variable is declared using 'let', there is no need to redeclare it.
 
-// var is just used to create a variable, it does not change value in case of local or global variable
+// 'var' is used to create a variable, but it doesn't respect block scope, 
+//      leading to value changes in both local and global variables.
+// 'var' doesn't support proper local and global variable declaration, making it less preferable than 'let'.
+// It is recommended to use 'let' or 'const' instead of 'var' for more predictable variable behavior.
 
-// So here a is declared under var so its value get changed even after defining inside a block
-// Thus var does not support local and global level of declaring a variable.
-// We cant define constant identifier later, it is to be defined at the moment
-const author = "Paras"
-// const is used to reserve an identifier so that user can't make any changes into it later.
-// User can not declare this identifier inside let or var later.
-//const author = "Upadhyay"   Also we cannot redefine a variable defined under const
+// Here, 'a' is declared using 'var', so its value can change even after being defined inside a block.
+// This highlights that 'var' doesn't adequately support local and global variable declaration.
+// It is advisable to use 'let' or 'const' for a more robust and predictable scoping mechanism.
 
-console.log(author)
-//let author = "Author"    // This will through an error
-//console.log(author)
+// Constant identifiers, declared with 'const', must be defined at the moment of declaration.
+const author = "Paras";
+// 'const' is used to reserve an identifier, preventing any changes later.
+// You cannot declare this identifier using 'let' or 'var' afterward.
+// const author = "Upadhyay"; // This will throw an error.
+
+// Also, one cannot redefine a variable defined with 'const'.
+console.log(author);
+// let author = "Author"; // This will throw an error.
+// console.log(author);
